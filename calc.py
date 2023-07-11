@@ -3,10 +3,20 @@ import sys
 
 
 def main():
+
+    if sys.argv[2] == "+":
+        return int(sys.argv[1]) + int(sys.argv[3])
+    elif sys.argv[2] == "-":
+        return int(sys.argv[1]) - int(sys.argv[3])
+    elif sys.argv[2] == "*":
+        return int(sys.argv[1]) * int(sys.argv[3])
+    elif sys.argv[2] == "/":
+        return int(sys.argv[1]) / int(sys.argv[3])
+
+
     """Implement the calculator"""
-    pass  # YOUR CODE HERE
+
 
 
 if __name__ == "__main__":
     print(main())
-    
